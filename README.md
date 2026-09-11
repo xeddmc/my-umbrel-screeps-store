@@ -1,2 +1,2 @@
-# my-umbrel-screeps-store
+# Screeps Umbrel Repo
 Umbrel screeps one-click install using Docker

@@ -1,0 +1,30 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: screeps-web-client
+      APP_PORT: 11080
+
+  screeps-server:
+    image: demannu/screeps-docker:latest
+    container_name: screeps-server
+    restart: unless-stopped
+    environment:
+      - SCREEPS_PORT=21025
+      - SCREEPS_CLI_PORT=21026
+    volumes:
+      - ${APP_DATA_DIR}/data/server:/screeps
+    ports:
+      - "21025:21025"
+      - "21026:21026"
+
+  screeps-web-client:
+    image: node:18-alpine
+    container_name: screeps-web-client
+    restart: unless-stopped
+    command: sh -c "npm install -g screepers-steamless-client && npx screepers-steamless-client --port 11080"
+    ports:
+      - "11080:11080"
+    volumes:
+      - ${APP_DATA_DIR}/data/client:/app
