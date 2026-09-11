@@ -1,0 +1,67 @@
+# Screeps Server Configuration
+# https://screeps.com/docs/mods.html
+
+# Port for game server / Web API
+port = 21025
+
+# Port for admin CLI
+admin_cli_port = 21026
+
+# Number of world runner processes (adjust based on your hardware)
+# For Celeron with 4GB RAM: runners_cnt = 2
+# For more powerful CPUs: runners_cnt = 4 or more
+runners_cnt = 2
+
+# Number of world processor processes
+# For Celeron with 4GB RAM: processors_cnt = 2
+processors_cnt = 2
+
+# Number of CPU cores available for player code execution
+# Default is 100 CPU. For Celeron with 4GB RAM: 100-200
+cpu_per_player = 100
+
+# World map configuration
+# Available map modes: sim, sim2, sim3, absim, absim2, absim3
+map_mode = sim
+
+# World size (number of rooms)
+world_size = 25
+
+# Game speed / tick rate in milliseconds
+# 1000 = 1 tick per second (default)
+# 2000 = 1 tick every 2 seconds
+# For Celeron with 4GB RAM: 1000-2000ms is fine
+tick_rate = 1000
+
+# Whether to run in "private" mode (no Steam API key needed)
+private_mode = true
+
+# Whether to allow guest accounts
+allow_guest = true
+
+# Whether to enable the web client
+web_client = true
+
+# Whether to enable the admin CLI
+admin_cli = true
+
+# Whether to enable the game engine
+game_engine = true
+
+# Whether to enable the world simulator
+world_simulator = true
+
+# Whether to enable the CPU profiler
+cpu_profiler = true
+
+# Whether to enable the memory profiler
+memory_profiler = true
+
+# Whether to enable the world profiler
+world_profiler = true
+
+# Whether to enable the game profiler
+game_profiler = true
+
+# Whether to enable the world simulator profiler
+world_simulator_profiler = true
