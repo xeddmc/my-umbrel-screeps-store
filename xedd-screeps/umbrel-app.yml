@@ -1,15 +1,19 @@
-id: "screeps"
+manifestVersion: 1
+id: "xedd-screeps"
 name: "Screeps Private Server"
 icon: "https://raw.githubusercontent.com/screeps/screeps/master/logo.png"
 tagline: "Private Screeps MMO server and 2D Web Client"
 description: "One-click deployment for a local private Screeps server complete with a web UI client."
 category: "Gaming"
 version: "1.0.0"
-port: 11080
+port: 8080
 developer: "Community"
 website: "https://screeps.com"
 repo: "https://github.com/screeps/screeps"
 support: "https://screeps.com"
-gallery: []
+gallery:
+  - "https://raw.githubusercontent.com/screeps/screeps/master/logo.png"
 path: ""
 defaultWithAuth: true
+submitter: "xeddmc"
+submissionDate: "2026-09-11"
